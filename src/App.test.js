@@ -2,8 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('adds properly', () => {
+  //wrapper.find('input').simulate('change', {target: {value: 1}});
+  // wip...
 });
