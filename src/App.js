@@ -9,14 +9,14 @@ function App() {
         [answer, setAnswer] = useState(0);
 
   // Untility Methods
-  const calculate = () => {
-    setAnswer(parseInt(num1) + parseInt(num2));
-  };
   const updateNum1 = (e) => {
-    setNum1(e.target.value);
+    setNum1(parseInt(e.target.value));
   };
   const updateNum2 = (e) => {
-    setNum2(e.target.value);
+    setNum2(parseInt(e.target.value));
+  };
+  const calculate = () => {
+    setAnswer(num1 + num2);
   };
 
   // Render Component
